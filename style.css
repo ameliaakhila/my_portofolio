@@ -1,0 +1,327 @@
+/* General Styles */
+.bg-blue {
+  background-color: #007bff !important; /* Warna biru Bootstrap */
+}
+
+.btn-blue {
+  background-color: #0056b3;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #004494;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #0056b3;
+}
+
+/* Container */
+.container {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Optional: Add some padding */
+}
+
+.container h2 {
+  text-align: center;
+  color: #007bff;
+}
+
+.container h2:hover {
+  color: #0056b3; /* Warna baru saat hover */
+}
+
+/* Navbar */
+.navbar .navbar-brand {
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+  color: #ffd700; /* Warna saat hover */
+  transform: scale(1.1);
+}
+
+.navbar .nav-item .nav-link {
+  color: white;
+}
+
+.navbar .nav-item .nav-link:hover {
+  background-color: #0056b3;
+  color: #ffd700;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+  background-color: #0056b3;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+  background-color: #004494;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  padding: 20px;
+  border-top: 2px solid #007bff;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-link:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* About Card */
+.about-card {
+  background-color: #f0f8ff;
+  border: 1px solid #007bff;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.5); /* Bayangan saat hover */
+}
+
+.card-title {
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Profile Header */
+.profile-header {
+  margin: 20px 0;
+}
+
+.profile-header h2 {
+  color: #004494;
+  text-align: center;
+}
+
+.profile-header .name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff; /* Warna biru */
+  margin: 10px 0;
+  opacity: 0; /* Mulai dengan transparan */
+  animation: fadeIn 1s forwards; /* Animasi fadeIn */
+  transition: transform 0.3s; /* Transisi untuk hover */
+}
+
+.profile-header .name:hover {
+  transform: scale(1.1); /* Efek zoom saat hover */
+  color: #ffffff; /* Warna putih saat hover */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Bayangan teks saat hover */
+}
+
+.profile-header .name:nth-child(1) {
+  animation-delay: 0s; /* Tidak ada delay untuk elemen pertama */
+}
+
+.profile-header .name:nth-child(2) {
+  animation-delay: 1s; /* Delay 1 detik untuk elemen kedua */
+}
+
+/* About Image */
+.about-img {
+  width: 150px;
+}
+
+.card-img-top {
+  width: 150px; /* Mengatur lebar gambar menjadi 150px */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block; /* Mengubah gambar menjadi block untuk margin auto */
+  margin: 0 auto; /* Memusatkan gambar secara horizontal */
+}
+
+.history-img {
+  display: flex; /* Menggunakan Flexbox */
+  justify-content: center; /* Memusatkan gambar secara horizontal */
+  align-items: center; /* Memusatkan gambar secara vertikal (jika diperlukan) */
+  height: 150px; /* Atur tinggi kontainer sesuai kebutuhan */
+}
+
+.history-img.animate {
+  opacity: 1; /* Menjadi terlihat */
+  transform: scale(1); /* Kembali ke ukuran normal */
+}
+
+/* Kelas untuk mengaktifkan animasi masuk pada judul */
+.card-title.animate {
+  opacity: 1; /* Menjadi terlihat */
+  transform: translateY(0); /* Kembali ke posisi normal */
+}
+
+/* Efek hover pada gambar */
+.history-img:hover {
+  transform: scale(1.05);
+}
+.project-img:hover {
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.2);
+}
+
+/* Efek hover pada judul */
+.card-title:hover {
+  color: #007bff; /* Mengubah warna judul saat hover */
+}
+
+/* Profile Image */
+.profile-img {
+  width: 150px; /* Ukuran gambar */
+  height: 150px; /* Ukuran gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  border: 5px solid #007bff; /* Border biru */
+  margin: 20px 0;
+  opacity: 0; /* Mulai dengan transparan */
+  animation: zoomIn 1s forwards; /* Animasi zoomIn */
+  animation-delay: 2s; /* Delay 2 detik untuk gambar */
+  transition: transform 0.3s; /* Transisi untuk hover */
+}
+
+.profile-img:hover {
+  transform: scale(1.2); /* Efek zoom saat hover */
+  border-color: #ffffff; /* Warna border putih saat hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Bayangan gambar saat hover */
+}
+
+/* Animated Text */
+.animated-text {
+  font-size: 1.2rem; /* Ukuran font */
+  line-height: 1.5; /* Jarak antar baris */
+  color: #333; /* Warna teks */
+  opacity: 0; /* Mulai dengan transparan */
+  animation: fadeIn 1s forwards; /* Animasi fadeIn */
+  padding: 10px; /* Padding untuk ruang di dalam kotak */
+  border-radius: 5px; /* Sudut membulat */
+  transition: background-color 0.3s, color 0.3s; /* Transisi untuk hover */
+}
+
+.animated-text:hover {
+  background-color: #007bff; /* Warna biru saat hover */
+  color: #ffffff; /* Warna teks putih saat hover */
+  border: 2px solid #0056b3; /* Border lebih gelap saat hover */
+}
+
+/* Card Styles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #007bff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom Image */
+.custom-img {
+  width: 70px !important;
+  height: 70px !important;
+  border: 5px #0056b3 solid;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Mulai dari bawah */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Akhir di posisi normal */
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Icon Style */
+.skills-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between icons */
+  margin: 10px 50px 0 50px;
+}
+
+.skills-icons i {
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.skills-icons i:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Set colors for each icon */
+.fa-html5 {
+  color: #e44d26; /* HTML color */
+}
+
+.fa-css3-alt {
+  color: #1572b6; /* CSS color */
+}
+
+.fa-js-square {
+  color: #f7df1e; /* JavaScript color */
+}
+
+.skill-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effects */
+.skill-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: scale(1.1);
+}
